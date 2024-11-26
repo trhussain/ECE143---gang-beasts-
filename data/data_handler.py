@@ -19,14 +19,14 @@ class dataHandler:
 
     def processData(self): 
         # grabs headers that match anything within this list 
-        desiredHeaders = ['lat', 'latitude', 'long', 'lon','name', 'fox'] 
+        desiredHeaders = ['lat', 'latitude', 'long', 'lon', 'fox', 'tag-local-identifier'] 
         matches = [header for header in self.headers if any(keyword in header for keyword in desiredHeaders)]
 
         #  from raw_df
         desired_df = self.raw_df[matches]
         
         # rename lat lon headers to appropiate plotting requirements --- hard coded 
-        desired_df.rename(columns= {"location-long": "LON", "location-lat": "LAT", "study-name": "info"}, inplace=True)
+        desired_df.rename(columns= {"location-long": "LON", "location-lat": "LAT", "study-name": "info", "tag-local-identifier" : "name"}, inplace=True)
         return desired_df
 
     def displayDataPretty(self):
@@ -41,7 +41,7 @@ class dataHandler:
         else:
             truncated_df = df
 
-        # Tabulate the truncated DataFrame
+        # tabulate the truncated DataFrame
         table = tabulate(truncated_df.values, headers=truncated_df.columns.tolist(), tablefmt="pretty", showindex=False)
         print(table)
         pass
@@ -50,4 +50,3 @@ class dataHandler:
 if __name__ == "__main__":
     myDH = dataHandler()
     myDH.displayDataPretty()
-    # print(tabulate(myDH.rawData, headers=myDH.headers, tablefmt="pretty", showindex=False))
