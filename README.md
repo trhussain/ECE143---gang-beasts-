@@ -26,7 +26,7 @@ streamlit run `.\Data_Visualization.py`
 
 To run all data analysis visualization and EDA of the datasets, go to direcorty ./data_analysis/test_code/
 
-- To run the EDA of red_fox, run 'red_fox_test.ipynb'
+- To run the EDA of red_fox, run 'red_fox.ipynb'
 - To run the correlation analysis of red_fox, run 'red_fox_correlate.ipynb'
 - To run the EDA and correlation analysis of jaguar, run 'jaguar_test.ipynb'
 
