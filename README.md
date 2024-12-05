@@ -1,12 +1,13 @@
 # Animal Migratory Pattern Tracking Module: Gang Beasts
 
 ## File Structure 
-At the top level directory there are 3 files and 3 subdirectories. 
+At the top level directory there are 4 files and 3 subdirectories. 
 - README.md: The current file you're viewing 
 - Data_Visualization.py: streamlit appliactions require the default page of 
 the application to exist in the top level directory in order to understand 
 what to run as the main page. This is that main page 
-- requirements.txt: A list of all 3rd party modules that were utilized 
+- requirements.txt: A list of all 3rd party modules that were utilized
+- Migration_Presentation.pdf: Our final presentation slides
 
 Then the purpose for each subdirectory.
 
