@@ -46,4 +46,4 @@ All third party modules are listed within the requirements.txt file, but to list
 
 ## Additional Notes
 
-Thank you for the Quarter! It was really enjoyable and I learned a lot in reference to Python, and I hope to always learn more! 
+Thank you for the Quarter! It was really enjoyable and we learned a lot in reference to Python, and we hope to always learn more! 
